@@ -1,0 +1,48 @@
+
+
+@media only screen and (min-width:750px){
+  .port-item.modal {
+    display: block;
+    overflow: visible;
+  }
+  .block-quote {
+    width: 25%;
+    min-width: 200px;
+    display: inline-block;
+    margin-left: 2.5%;
+  }
+  .block-quote p {
+    width: 183px;
+  }
+  .block-quote h3 {
+    text-align: left;
+    width: 50px;
+    margin-left: 30px;
+  }
+  #availability .block-quote p {
+    width: 100%;
+  }
+  #bio{
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+  }
+}
+
+@media only screen and (min-width:1200px){
+  .port-item.modal {
+    left: -32px;
+    top: -30px; }
+    .calendar {
+      margin: 30px auto;
+    }
+    .calendar.desktop {
+      display: block;
+    }
+    .calendar.tablet {
+      display: none; }
+      #availability .block-quote p {
+        width: 500px; }
+      .block-quote {
+        margin-left: 7%;  }
+}
