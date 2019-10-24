@@ -1,0 +1,46 @@
+/**************************/
+/*         IMAGES         */
+/**************************/
+img{
+  border: 1px solid #403925;
+  box-shadow: 5px 5px 5px #000;
+}
+
+.port-item img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-bottom: 25px;
+}
+.profile{
+  width: 30%;
+  float: left;
+  margin: 1% 5% auto auto;
+  @include brk-pt-md{
+    &.mobile-hidden{
+      display:none;
+    }
+  }
+  @include brk-pt-lg{
+    &.mobile-hidden{
+      display: inline-block;
+    }
+}
+
+}
+/**************************/
+/*        Soc Med         */
+/**************************/
+svg {
+  width: 55px;
+}
+
+.outer-shape {
+  opacity: 1;
+  fill: black;
+}
+
+.inner-shape {
+  opacity: 1;
+  fill: #00ffe6;
+}

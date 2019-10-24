@@ -1,0 +1,81 @@
+{
+  "portItems":
+            [
+             {
+             "name"   :"Registration Form",
+             "url"    :"https://athenaozanich.github.io/online-registration-form/",
+             "repo"   :"https://github.com/athenaozanich/online-registration-form",
+             "img"    :"regForm.png",
+             "desc"   :"A mobile friendly registration form. Incorporated various html input types and associated attributes for form control. Form implements html5 form validations such as \"required\" and simple valid email check.",
+             "Skills" :
+                     [
+
+                     ]
+             },
+             {
+             "name"   :"Photo Gallery",
+             "url"    :"https://athenaozanich.github.io/photo_gallery/",
+             "repo"   :"https://github.com/athenaozanich/photo_gallery",
+             "img"    :"photoGallery.png",
+             "desc"   :"A mobile friendly interactive searchable photo gallery. Incorporated colorbox plugin for lightbox modal with \"in-View\" modal navigation. Wrote orginal JavaScript code for photo search filter which searched the caption and title for matching search text.",
+             "Skills" :
+                     [
+
+                     ]
+             },
+             {
+             "name"   :"Style Guide",
+             "url"    :"https://athenaozanich.github.io/style_guide_v3/",
+             "repo"   :"https://github.com/athenaozanich/style_guide_v3",
+             "img"    :"styleGuide.png",
+             "desc"   :"A mobile friendly style guide utilizing Sass for a mobile first responsive approach. Incorporated best practices for file structring as well as basic core concepts of targeting and dynamically styling elements. Worked with advanced Sass techniques to create poweful reusable AND scalable Sass.",
+             "Skills" :
+                     [
+
+                     ]
+             },{
+             "name"   :"Guessing Game",
+             "url"    :"https://athenaozanich.github.io/game_show_app_v1/",
+             "repo"   :"https://github.com/athenaozanich/game_show_app_v1",
+             "img"    :"wordGame.png",
+             "desc"   :"Almost PURE JavaScript, this phrase guessing game incorporated aspects of DOM traversing and manipulation as well as logical loops. Utilizing JavaScript objects, arrays, strings and other data types with events to control and manipulate the DOM according to user interactions.",
+             "Skills" :
+                     [
+
+                     ]
+             },
+             {
+             "name"   :"Web App Dash",
+             "url"    :"https://athenaozanich.github.io/web_app_dashboard_v2/",
+             "repo"   :"https://github.com/athenaozanich/web_app_dashboard_v2",
+             "img"    :"webAppDash.png",
+             "desc"   :"A mobile friendly Web App Dashboard. Incorporated Chart.js for inclusion of graphs and built custom widgets for displaying social media stats and recent user information. Implemented JavaScript form validation for messaging a user and local storage for saving preferences.",
+             "Skills" :
+                     [
+
+                     ]
+             },
+             {
+             "name"   :"Directory",
+             "url"    :"https://athenaozanich.github.io/employee_directory_v1/",
+             "repo"   :"https://github.com/athenaozanich/employee_directory_v1",
+             "img"    :"empDirect.png",
+             "desc"   :"A mobile friendly interactive searchable employee directory. Incorporated API requests to display random users for testing functionality and search for filtering employees utilizing JavaScript and jQuery. Created modal view for displaying additional user information, including \"in-View\" modal navigation.",
+             "Skills" :
+                     [
+
+                     ]
+             },
+             {
+             "name"   :"Random Quotes",
+             "url"    :"https://athenaozanich.github.io/random-quote-generator/",
+             "repo"   :"https://github.com/athenaozanich/random-quote-generator",
+             "img"    :"randQuoteGen.png",
+             "desc"   :"A fun random quote generator built utilizing pure javascript, html and css. Randomly create a new hex color for background and selects a quote from an array and adds it to the dom after a few seconds.",
+             "Skills" :
+                     [
+
+                     ]
+             }
+            ]
+}

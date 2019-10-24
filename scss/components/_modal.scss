@@ -1,0 +1,50 @@
+/**************************/
+/*         modal          */
+/**************************/
+.port-item.modal {
+  z-index: 1000;
+  position: fixed;
+  top: -30px;
+  left: -15px;
+  width: 101vw;
+  height: 105vh;
+  background-color: rgba(0, 0, 0, 0.87);
+  overflow: hidden;
+  cursor: default; }
+
+.port-item.modal img {
+  display: block;
+  width: 50%;
+  margin: auto;
+margin-bottom: -15px;}
+
+.port-item.modal h4 {
+  display: inline-block;
+  width: 65%;
+  margin: 30px auto 0px auto;
+  text-align: center; }
+
+.port-item.modal p{
+  display: block;
+  overflow: hidden;
+  padding: 10px;
+  margin: 2%;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 10px black;
+}
+.port-item.modal .container {
+  margin: 0px auto;
+  width: 40%; }
+
+.port-item.modal .close {
+  display: block; }
+
+.modal a{
+  width: 75%;
+  margin: auto;
+  margin-top:-15px;
+  @include brk-pt-md{
+    margin-top:5px;
+  }
+}
+ 
