@@ -446,8 +446,7 @@ main {
   padding: 2.5%; }
 
 aside {
-  border-radius: 5px;
-  margin-bottom: 10%; }
+  border-radius: 5px; }
 
 .header-left {
   display: block;
@@ -464,9 +463,8 @@ button {
   margin-top: 25vh; }
 
 .port-item {
-  width: 91%;
-  display: inline-block;
-  margin-left: 4.5%; }
+  width: 100%;
+  display: inline-block; }
   @media (min-width: 769px) {
     .port-item {
       width: 44%;
@@ -738,14 +736,22 @@ svg {
 .vert-wrapper {
   width: 100%; }
 
-.fa-angle-double-down, .fa-angle-double-up {
+.fas {
   display: block;
   animation: fade 2000ms ease-in-out infinite;
-  opacity: 0; }
+  opacity: 0;
+  color: #beb28e; }
+
+.fa-angle-double-right, .fa-angle-double-left {
+  position: absolute;
+  padding: 50% 5%; }
+
+.fa-angle-double-right {
+  right: 0px; }
 
 .anchors {
   position: absolute;
-  bottom: 0px;
+  bottom: 25px;
   width: 100%;
   margin: auto; }
 
@@ -821,5 +827,10 @@ svg {
  */
 #menuToggle input:checked ~ ul {
   transform: none; }
+
+#portNav {
+  display: block;
+  width: 100%;
+  height: 25px; }
 
 /*# sourceMappingURL=styles.css.map */
