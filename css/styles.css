@@ -446,8 +446,12 @@ main {
   padding: 2.5%; }
 
 aside {
+<<<<<<< HEAD
   border-radius: 5px;
   margin-bottom: 10%; }
+=======
+  border-radius: 5px; }
+>>>>>>> 5d9d4b7ce42e6381b5f150d11ae6b6c3f9e02316
 
 .header-left {
   display: block;
@@ -464,9 +468,14 @@ button {
   margin-top: 25vh; }
 
 .port-item {
+<<<<<<< HEAD
   width: 91%;
   display: inline-block;
   margin-left: 4.5%; }
+=======
+  width: 100%;
+  display: inline-block; }
+>>>>>>> 5d9d4b7ce42e6381b5f150d11ae6b6c3f9e02316
   @media (min-width: 769px) {
     .port-item {
       width: 44%;
@@ -738,6 +747,7 @@ svg {
 .vert-wrapper {
   width: 100%; }
 
+<<<<<<< HEAD
 .fa-angle-double-down, .fa-angle-double-up {
   display: block;
   animation: fade 2000ms ease-in-out infinite;
@@ -746,6 +756,24 @@ svg {
 .anchors {
   position: absolute;
   bottom: 0px;
+=======
+.fas {
+  display: block;
+  animation: fade 2000ms ease-in-out infinite;
+  opacity: 0;
+  color: #beb28e; }
+
+.fa-angle-double-right, .fa-angle-double-left {
+  position: absolute;
+  padding: 50% 5%; }
+
+.fa-angle-double-right {
+  right: 0px; }
+
+.anchors {
+  position: absolute;
+  bottom: 25px;
+>>>>>>> 5d9d4b7ce42e6381b5f150d11ae6b6c3f9e02316
   width: 100%;
   margin: auto; }
 
@@ -822,4 +850,12 @@ svg {
 #menuToggle input:checked ~ ul {
   transform: none; }
 
+<<<<<<< HEAD
+=======
+#portNav {
+  display: block;
+  width: 100%;
+  height: 25px; }
+
+>>>>>>> 5d9d4b7ce42e6381b5f150d11ae6b6c3f9e02316
 /*# sourceMappingURL=styles.css.map */

@@ -42,7 +42,10 @@ main {
 
  aside {
   border-radius: 5px;
+<<<<<<< HEAD
   margin-bottom: 10%;
+=======
+>>>>>>> 5d9d4b7ce42e6381b5f150d11ae6b6c3f9e02316
   }
 .header-left {
   display: block;
@@ -59,9 +62,14 @@ button {
   margin-top: 25vh;}
 
 .port-item {
+<<<<<<< HEAD
   width: 91%;
   display: inline-block;
   margin-left: 4.5%;
+=======
+  width: 100%;
+  display: inline-block;
+>>>>>>> 5d9d4b7ce42e6381b5f150d11ae6b6c3f9e02316
   @include brk-pt-md{
     width: 44%;
     margin-left: 4.5%;
