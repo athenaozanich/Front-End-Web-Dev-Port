@@ -4,16 +4,15 @@ function addGraphs(){
 
   for (var i = 0; i < barGraphs.length; i++) {
     let ctx = barGraphs[i].getContext('2d');
-    console.log(ctx);
     // your code here
 
     var myChart = new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['HTML', 'CSS', 'JS/JQ', 'SASS', 'WCAG', 'REACT'],
         datasets: [{
-          label: '# of Votes',
-          data: [12, 19, 3, 5, 2, 3],
+          label: 'Skills Utilized',
+          data: [100, 100, 30, 20, 30, 0],
           backgroundColor: [
             'rgba(255, 99, 132, 0.2)',
             'rgba(54, 162, 235, 0.2)',
@@ -37,7 +36,10 @@ function addGraphs(){
         scales: {
           yAxes: [{
             ticks: {
-              beginAtZero: true
+              beginAtZero: true,
+              min: 0,
+              max: 100,
+              callback: function(value){return value+ "%"}
             }
           }]
         }
@@ -45,4 +47,3 @@ function addGraphs(){
     });
   }
 }
-addGraphs();

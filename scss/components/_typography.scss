@@ -2,15 +2,21 @@
 /*       TYPOGRAPHY       */
 /**************************/
 
-h1, h2, h3, h4, h5{
+h1, h2, h3, h5{
   @extend %headlines;
+}
+h4 {
+    color: #00dcbf;
+    font-weight: normal;
+    display: block;
+    margin: 30px auto 0px auto;
+    text-align: center;
 }
 h3{
   position: absolute;
 }
 p, h6{
   text-transform: none;
-  font-size: 1.25rem;
   font-family: $raleway;
   color: hsla(174, 100%, 50%, 1);
   font-weight: lighter;
@@ -40,7 +46,6 @@ nav a:hover, .active {
 }
 
 section p {
-  font-size: 1.25rem;
   width: 90%;
   margin: auto 5%;
   text-shadow: 3px 3px 2.5px #000;
@@ -72,7 +77,7 @@ span, .port-item a {
   .vert-wrapper .port-item a{
     color: #beb28e;
     width:45%;
-    display:inline-block;
+    display:none;
   }
   .other-work span{
     display: block;

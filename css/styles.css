@@ -4,7 +4,7 @@
 /*Fonts*/
 @import url("https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
-h1, h2, h3, h4, h5, #myName, a {
+h1, h2, h3, h5, #myName, a {
   display: block;
   font-family: "Bilbo Swash Caps", cursive;
   text-align: center;
@@ -446,8 +446,7 @@ main {
   padding: 2.5%; }
 
 aside {
-  border-radius: 5px;
-  margin-bottom: 10%; }
+  border-radius: 5px; }
 
 .header-left {
   display: block;
@@ -464,9 +463,8 @@ button {
   margin-top: 25vh; }
 
 .port-item {
-  width: 91%;
-  display: inline-block;
-  margin-left: 4.5%; }
+  width: 100%;
+  display: inline-block; }
   @media (min-width: 769px) {
     .port-item {
       width: 44%;
@@ -494,12 +492,18 @@ section {
 /**************************/
 /*       TYPOGRAPHY       */
 /**************************/
+h4 {
+  color: #00dcbf;
+  font-weight: normal;
+  display: block;
+  margin: 30px auto 0px auto;
+  text-align: center; }
+
 h3 {
   position: absolute; }
 
 p, h6 {
   text-transform: none;
-  font-size: 1.25rem;
   font-family: "Raleway", sans-serif;
   color: #00ffe6;
   font-weight: lighter;
@@ -524,7 +528,6 @@ nav a:hover, .active {
   text-shadow: 0px 0px 20px #f461ff; }
 
 section p {
-  font-size: 1.25rem;
   width: 90%;
   margin: auto 5%;
   text-shadow: 3px 3px 2.5px #000;
@@ -555,7 +558,7 @@ span, .port-item a {
 .vert-wrapper .port-item a {
   color: #beb28e;
   width: 45%;
-  display: inline-block; }
+  display: none; }
 
 .other-work span {
   display: block; }
@@ -573,10 +576,9 @@ nav a {
 .port-item.modal {
   z-index: 1000;
   position: fixed;
-  top: -30px;
-  left: -15px;
-  width: 101vw;
-  height: 105vh;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.87);
   overflow: hidden;
   cursor: default; }
@@ -584,20 +586,20 @@ nav a {
 .port-item.modal img {
   display: block;
   width: 50%;
-  margin: auto;
-  margin-bottom: -15px; }
+  max-width: 250px;
+  margin: auto; }
+
+.port-item.modal span {
+  display: none; }
 
 .port-item.modal h4 {
-  display: inline-block;
-  width: 65%;
-  margin: 30px auto 0px auto;
   text-align: center; }
 
 .port-item.modal p {
   display: block;
   overflow: hidden;
   padding: 10px;
-  margin: 2%;
+  margin: auto;
   border-radius: 5px;
   box-shadow: inset 0px 0px 10px black; }
 
@@ -608,12 +610,12 @@ nav a {
 .port-item.modal .close {
   display: block; }
 
-.modal a {
-  width: 75%;
+.port-item.modal a {
+  display: inline-block;
   margin: auto;
   margin-top: -15px; }
   @media (min-width: 769px) {
-    .modal a {
+    .port-item.modal a {
       margin-top: 5px; } }
 
 /**************************/
@@ -624,7 +626,7 @@ img {
   box-shadow: 5px 5px 5px #000; }
 
 .port-item img {
-  width: 100%;
+  width: 70%;
   display: block;
   margin: auto;
   margin-bottom: 25px; }
@@ -738,14 +740,22 @@ svg {
 .vert-wrapper {
   width: 100%; }
 
-.fa-angle-double-down, .fa-angle-double-up {
+.fas {
   display: block;
   animation: fade 2000ms ease-in-out infinite;
-  opacity: 0; }
+  opacity: 0;
+  color: #beb28e; }
+
+.fa-angle-double-right, .fa-angle-double-left {
+  position: absolute;
+  padding: 50% 5%; }
+
+.fa-angle-double-right {
+  right: 0px; }
 
 .anchors {
   position: absolute;
-  bottom: 0px;
+  bottom: 25px;
   width: 100%;
   margin: auto; }
 
@@ -821,5 +831,16 @@ svg {
  */
 #menuToggle input:checked ~ ul {
   transform: none; }
+
+#portNav {
+  display: block;
+  width: 100%;
+  height: 25px; }
+
+canvas {
+  width: 70% !important;
+  max-width: 350px !important;
+  height: auto !important;
+  margin: auto; }
 
 /*# sourceMappingURL=styles.css.map */
