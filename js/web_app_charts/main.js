@@ -47,6 +47,3 @@ function addGraphs(){
     });
   }
 }
-setTimeout(function(){
-  addGraphs();
-},1000);

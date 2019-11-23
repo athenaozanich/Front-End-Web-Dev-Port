@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
  }
 
   function appendProjects(projectsAsArray, currentIdx){
+    console.log(projectsAsArray, currentIdx);
     //loop through data
     while (vertPortWrapper.firstChild) {
       vertPortWrapper.removeChild(vertPortWrapper.firstChild);
@@ -48,20 +49,39 @@ document.addEventListener('DOMContentLoaded', function() {
                                                      <i class="fas fa-angle-double-right"></i>`);
     }
     vertPortWrapper.appendChild(projectsAsArray[currentIdx]);
+    setTimeout(function(){
+      addGraphs();
+    },1000);
   }
 
 
    vertPortWrapper.addEventListener('click', e => {
 
      if (e.target.className === "fas fa-angle-double-right") {
-       projectIdx++;
-       //console.log(projectIdx);
+       if (projectIdx < projectsAsArray.length-1) {
+         projectIdx++;
+       }else{
+         projectIdx = 0;
+       }
        appendProjects(projectsAsArray, projectIdx);
+
      }
-     // if (e.target.className != 'close' && e.target.tagName !== 'H6'){
-     //   const projectCard = e.target.closest(".port-item");
-     //   modalHandler(projectCard);
-     // }
+     if (e.target.className === "fas fa-angle-double-left") {
+       if (projectIdx != 0 ) {
+         projectIdx--;
+
+       }else{
+         projectIdx = projectsAsArray.length-1;
+       }
+
+       appendProjects(projectsAsArray, projectIdx);
+
+     }
+
+     if (e.target.className != 'close' && e.target.tagName === 'SPAN'){
+       let projectCard = e.target.closest(".port-item");
+       modalHandler(projectCard);
+     }
 
 
    });
