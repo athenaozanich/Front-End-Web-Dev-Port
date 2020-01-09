@@ -4,7 +4,7 @@
 /*Fonts*/
 @import url("https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
-h1, h2, h3, h4, h5, #myName, a {
+h1, h2, h3, h5, #myName, a {
   display: block;
   font-family: "Bilbo Swash Caps", cursive;
   text-align: center;
@@ -447,11 +447,15 @@ main {
 
 aside {
 <<<<<<< HEAD
+<<<<<<< HEAD
   border-radius: 5px;
   margin-bottom: 10%; }
 =======
   border-radius: 5px; }
 >>>>>>> 5d9d4b7ce42e6381b5f150d11ae6b6c3f9e02316
+=======
+  border-radius: 5px; }
+>>>>>>> ccb5ce12db3d3004a61ebf4d8eea78a950f7ee14
 
 .header-left {
   display: block;
@@ -469,6 +473,7 @@ button {
 
 .port-item {
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 91%;
   display: inline-block;
   margin-left: 4.5%; }
@@ -476,6 +481,10 @@ button {
   width: 100%;
   display: inline-block; }
 >>>>>>> 5d9d4b7ce42e6381b5f150d11ae6b6c3f9e02316
+=======
+  width: 100%;
+  display: inline-block; }
+>>>>>>> ccb5ce12db3d3004a61ebf4d8eea78a950f7ee14
   @media (min-width: 769px) {
     .port-item {
       width: 44%;
@@ -503,12 +512,18 @@ section {
 /**************************/
 /*       TYPOGRAPHY       */
 /**************************/
+h4 {
+  color: #00dcbf;
+  font-weight: normal;
+  display: block;
+  margin: 30px auto 0px auto;
+  text-align: center; }
+
 h3 {
   position: absolute; }
 
 p, h6 {
   text-transform: none;
-  font-size: 1.25rem;
   font-family: "Raleway", sans-serif;
   color: #00ffe6;
   font-weight: lighter;
@@ -533,7 +548,6 @@ nav a:hover, .active {
   text-shadow: 0px 0px 20px #f461ff; }
 
 section p {
-  font-size: 1.25rem;
   width: 90%;
   margin: auto 5%;
   text-shadow: 3px 3px 2.5px #000;
@@ -564,7 +578,7 @@ span, .port-item a {
 .vert-wrapper .port-item a {
   color: #beb28e;
   width: 45%;
-  display: inline-block; }
+  display: none; }
 
 .other-work span {
   display: block; }
@@ -582,10 +596,9 @@ nav a {
 .port-item.modal {
   z-index: 1000;
   position: fixed;
-  top: -30px;
-  left: -15px;
-  width: 101vw;
-  height: 105vh;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.87);
   overflow: hidden;
   cursor: default; }
@@ -593,20 +606,20 @@ nav a {
 .port-item.modal img {
   display: block;
   width: 50%;
-  margin: auto;
-  margin-bottom: -15px; }
+  max-width: 250px;
+  margin: auto; }
+
+.port-item.modal span {
+  display: none; }
 
 .port-item.modal h4 {
-  display: inline-block;
-  width: 65%;
-  margin: 30px auto 0px auto;
   text-align: center; }
 
 .port-item.modal p {
   display: block;
   overflow: hidden;
   padding: 10px;
-  margin: 2%;
+  margin: auto;
   border-radius: 5px;
   box-shadow: inset 0px 0px 10px black; }
 
@@ -617,12 +630,12 @@ nav a {
 .port-item.modal .close {
   display: block; }
 
-.modal a {
-  width: 75%;
+.port-item.modal a {
+  display: inline-block;
   margin: auto;
   margin-top: -15px; }
   @media (min-width: 769px) {
-    .modal a {
+    .port-item.modal a {
       margin-top: 5px; } }
 
 /**************************/
@@ -633,7 +646,7 @@ img {
   box-shadow: 5px 5px 5px #000; }
 
 .port-item img {
-  width: 100%;
+  width: 70%;
   display: block;
   margin: auto;
   margin-bottom: 25px; }
@@ -748,6 +761,7 @@ svg {
   width: 100%; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .fa-angle-double-down, .fa-angle-double-up {
   display: block;
   animation: fade 2000ms ease-in-out infinite;
@@ -757,6 +771,8 @@ svg {
   position: absolute;
   bottom: 0px;
 =======
+=======
+>>>>>>> ccb5ce12db3d3004a61ebf4d8eea78a950f7ee14
 .fas {
   display: block;
   animation: fade 2000ms ease-in-out infinite;
@@ -773,7 +789,10 @@ svg {
 .anchors {
   position: absolute;
   bottom: 25px;
+<<<<<<< HEAD
 >>>>>>> 5d9d4b7ce42e6381b5f150d11ae6b6c3f9e02316
+=======
+>>>>>>> ccb5ce12db3d3004a61ebf4d8eea78a950f7ee14
   width: 100%;
   margin: auto; }
 
@@ -851,11 +870,23 @@ svg {
   transform: none; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ccb5ce12db3d3004a61ebf4d8eea78a950f7ee14
 #portNav {
   display: block;
   width: 100%;
   height: 25px; }
 
+<<<<<<< HEAD
 >>>>>>> 5d9d4b7ce42e6381b5f150d11ae6b6c3f9e02316
+=======
+canvas {
+  width: 70% !important;
+  max-width: 350px !important;
+  height: auto !important;
+  margin: auto; }
+
+>>>>>>> ccb5ce12db3d3004a61ebf4d8eea78a950f7ee14
 /*# sourceMappingURL=styles.css.map */

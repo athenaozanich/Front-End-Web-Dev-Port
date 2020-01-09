@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', function() {
 
    //Wait for document to be ready
@@ -53,6 +54,8 @@ document.addEventListener('DOMContentLoaded', function() {
    });
 
 =======
+=======
+>>>>>>> ccb5ce12db3d3004a61ebf4d8eea78a950f7ee14
 //Wait for document to be ready
 const vertPortWrapper = document.querySelector(".vert-wrapper");
 let projectIdx = 0;
@@ -94,6 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
  }
 
   function appendProjects(projectsAsArray, currentIdx){
+    console.log(projectsAsArray, currentIdx);
     //loop through data
     while (vertPortWrapper.firstChild) {
       vertPortWrapper.removeChild(vertPortWrapper.firstChild);
@@ -103,24 +107,46 @@ document.addEventListener('DOMContentLoaded', function() {
                                                      <i class="fas fa-angle-double-right"></i>`);
     }
     vertPortWrapper.appendChild(projectsAsArray[currentIdx]);
+    setTimeout(function(){
+      addGraphs();
+    },1000);
   }
 
 
    vertPortWrapper.addEventListener('click', e => {
 
      if (e.target.className === "fas fa-angle-double-right") {
-       projectIdx++;
-       //console.log(projectIdx);
+       if (projectIdx < projectsAsArray.length-1) {
+         projectIdx++;
+       }else{
+         projectIdx = 0;
+       }
        appendProjects(projectsAsArray, projectIdx);
+
      }
-     // if (e.target.className != 'close' && e.target.tagName !== 'H6'){
-     //   const projectCard = e.target.closest(".port-item");
-     //   modalHandler(projectCard);
-     // }
+     if (e.target.className === "fas fa-angle-double-left") {
+       if (projectIdx != 0 ) {
+         projectIdx--;
+
+       }else{
+         projectIdx = projectsAsArray.length-1;
+       }
+
+       appendProjects(projectsAsArray, projectIdx);
+
+     }
+
+     if (e.target.className != 'close' && e.target.tagName === 'SPAN'){
+       let projectCard = e.target.closest(".port-item");
+       modalHandler(projectCard);
+     }
 
 
    });
+<<<<<<< HEAD
 >>>>>>> 5d9d4b7ce42e6381b5f150d11ae6b6c3f9e02316
+=======
+>>>>>>> ccb5ce12db3d3004a61ebf4d8eea78a950f7ee14
 
    function modalHandler(projectCard) {
      projectCard.classList.add('modal');
@@ -132,7 +158,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
    }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   pullData();
 >>>>>>> 5d9d4b7ce42e6381b5f150d11ae6b6c3f9e02316
+=======
+  pullData();
+>>>>>>> ccb5ce12db3d3004a61ebf4d8eea78a950f7ee14
 }, false);
